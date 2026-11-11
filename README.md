@@ -10,8 +10,8 @@ This flash guide discusses the root causes and some solutions. It speaks both to
 1. Agents do not magically know your users, business setting and implicit requirements
 2. Agents have biases from code they learned from other codebases, which are subtly wrong for your mission
 3. Faulty instructions and specs will silently break your solution
-4. Your code will be trapped in a local minimum because agents prefer inline fixes over risky large-scale refactoring
-5. Over time your agent-written software will grow in size, complexity and degrade the architecture - making fixes and fault recovery harder
+4. Over time your agent-written software will grow in size, complexity and rot the architecture - making fixes and fault recovery harder
+5. Your code will be trapped in a local minimum because agents prefer inline fixes over risky large-scale refactoring
 6. Knowledge about your code will not be transferred to human maintainers, operators and users;  their coding skills will degrade from disuse
 
 ## Solutions - principles
@@ -30,9 +30,9 @@ This flash guide discusses the root causes and some solutions. It speaks both to
 6. Role playing agents: create multiple agentic roles (e.g. planner, critic, data reader, implementer, reviewer, tester - see superpowers)
 
 ## Solutions - implementation and subsequent revision
-1. Roadmap: create a roadmap for development; use previous stacks as reference and scaffold for the next iterations
+1. Roadmap: create a roadmap for development; use previous stacks as reference and scaffold for next iterations
 2. Prototype to reduce risk: build small prototypes to test assumptions about speed, data and apply the lessons
-3. Cleanroom replication: extract the specs of the code, review it and do a clean room rebuild. Compare the solutions.
+3. Cleanroom replication: extract the specs of the code, review it for errors, and do a clean room rebuild. Compare the solutions.
 4. Contract design: codify interfaces between components to reduce complexity and architecture rot
 
 
